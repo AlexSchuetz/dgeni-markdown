@@ -40,7 +40,7 @@ With that you&apos;re ready to get started!
 
 | Name | Description |
 | :--: | :--: |{% for component in componentGroup.components %}
-| {$ component.name $} | {$ component.description | firstLine | marked | nobr $} |{% endfor %}
+| [{$ component.path $}]({$ component.name $}) | {$ component.description | firstLine | marked | nobr $} |{% endfor %}
 
 {% endfor %}
 {% endif %}
